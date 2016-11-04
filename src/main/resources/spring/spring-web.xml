@@ -31,4 +31,9 @@
 
     <!--3:扫描web相关的bean-->
     <context:component-scan base-package="org.idou.web" />
+       
+    <!-- 注册拦截器 -->
+    <mvc:interceptors>
+            <bean class="org.idou.interceptor.LoginInterceptor" />
+    </mvc:interceptors>
 </beans>
